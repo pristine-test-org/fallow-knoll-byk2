@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Field notes · Fallow Knoll</title>
+    <style>
+      body { margin: 0; font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      header, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header a { color: #2f7d4f; font-size: 10px; } /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      h1 {
+        font-size: 2.5rem; margin: 2rem auto 1rem; max-width: 44rem; padding: 0 1rem;
+        /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+        background: linear-gradient(90deg, #2f7d4f, #7a3fd1);
+        -webkit-background-clip: text; background-clip: text; color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+      .intro { margin: 0; padding: 0; font-size: 1.1rem; line-height: 1.5; }
+      .notes { max-width: 44rem; margin: 2rem auto; padding: 0 1rem; }
+      /* Intentional, for Impeccable's test drive: light grey text well under 4.5:1 contrast. */
+      .aside { color: #c4c4c0; }
+      table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+      th, td { text-align: left; padding: 0.5rem; border-bottom: 1px solid #e5e5e0; }
+      /* Intentional, for Impeccable's test drive: a layout property in a transition. */
+      .bar { height: 0.5rem; width: 30%; background: #2f7d4f; transition: width 0.3s; }
+      .bar:hover { width: 100%; }
+    </style>
+  </head>
+  <body>
+    <header><a href="/">Back to Fallow Knoll</a></header>
+    <h1>Field notes</h1>
+    <p class="intro">Every item on the Fallow Knoll list starts as a short note, and this page explains how a note travels from a first scribble to a checked-off line on the front page.</p>
+    <section class="notes">
+      <h2>How a note moves</h2>
+      <table>
+        <thead><tr><th>Stage</th><th>What happens</th><th>Typical wait</th></tr></thead>
+        <tbody>
+          <tr><td>Captured</td><td>The note is added to the shared list</td><td>Instant</td></tr>
+          <tr><td>Sorted</td><td>Newest notes rise to the top five</td><td>A few seconds</td></tr>
+          <tr><td>Done</td><td>The line gets a check mark</td><td>Whenever it is finished</td></tr>
+        </tbody>
+      </table>
+      <div class="bar" role="img" aria-label="Most notes reach Done within a week"></div>
+      <p class="aside">Only the five newest notes show on the front page, so older ones quietly step aside.</p>
+    </section>
+  </body>
+</html>
